@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, 'BlinkMacSystemFont', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    display: flex;
+    /* padding: 10px; */
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        margin-top: 20px;
+        left: 50%;
+        border-radius: 50px;
+        transform: translateX(-50%);
+        width: auto;
+        height: 50px;
+        padding: 0px 15px;
+
+
+        nav {
+            width: 800px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px;
+            margin-top: 12px;
+            color: white;
+
+            .right span {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            #aboutBtn {
+                /* anchor-name: --about; */
+                position: relative;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+
+                span {
+                    font-size: 15px;
+                }
+            }
+
+            .left {
+                display: flex;
+                flex-direction: row;
+
+                button {
+                    padding: 5px 10px;
+                    border: none;
+                    border-radius: 15px;
+                    background-color: white;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+
+                button:active {
+                    background-color: black;
+                    color: white;
+                }
+
+            }
+        }
+
+        #about {
+            /* position: absolute; */
+            /* position-anchor: --about; */
+            /* top: anchor(-108%); */
+            /* padding-top: 64px; */
+            /* width: 805px; */
+            /* border-radius: 25px; */
+            /* left: anchor(-810%); */
+            color: white;
+            display: flex;
+            padding: 10px 0px 15px 0px;
+            visibility: hidden;
+
+            .right {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+
+                h5 {
+                    font-size: 19px;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+}

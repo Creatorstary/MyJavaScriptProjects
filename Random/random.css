@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 600px;
+    background: url(/Random/Blue\ black\ Photo.jpg) no-repeat;
+    background-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    #title {
+        color: white;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.521);
+        padding: 7px 14px;
+        border-radius: 10px;
+    }
+
+    #box {
+        width: 600px;
+        height: 250px;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgb(139, 51, 0);
+        border-radius: 20px;
+
+        .quote {
+            color: white;
+            font-size: 25px;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .person {
+             color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 600;
+        }
+
+        .btn {
+            width: auto;
+            display: flex;
+            justify-content: center;
+
+            button {
+                background-color: white;
+                border: none;
+                border-radius: 10px;
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+
+            button:hover {
+                background-color: rgb(211, 211, 211);
+            }
+            button:active {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+

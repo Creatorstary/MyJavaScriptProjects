@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(money.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+
+}
+
+.content {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+
+    .timer {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .control {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(20, 20, 20);
+
+            .fa-play {
+                width: 25px;
+                height: 25px;
+                color: rgb(255, 255, 255);
+            }
+
+            .fa-pause {
+                width: 25px;
+                height: 25px;
+                color: rgb(255, 255, 255);
+            }
+
+            .fa-rotate-left {
+                width: 25px;
+                height: 25px;
+                color: rgb(255, 255, 255);
+            }
+        }
+
+
+    }
+}
